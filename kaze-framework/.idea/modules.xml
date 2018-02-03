@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kaze-framework.iml" filepath="$PROJECT_DIR$/kaze-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kaze-framework_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kaze-framework_main.iml" group="kaze-framework" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kaze-framework_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kaze-framework_test.iml" group="kaze-framework" />
+    </modules>
+  </component>
+</project>
