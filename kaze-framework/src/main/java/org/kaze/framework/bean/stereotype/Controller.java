@@ -1,4 +1,4 @@
-package org.kaze.framework.ioc.stereotype;
+package org.kaze.framework.bean.stereotype;
 
 import java.lang.annotation.*;
 

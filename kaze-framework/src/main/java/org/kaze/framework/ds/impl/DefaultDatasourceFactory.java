@@ -22,6 +22,7 @@ public class DefaultDatasourceFactory extends AbstractDatasourceFactory {
         return defaultDatasourceFactory;
     }
 
+    @Override
     public DataSource getDatasource() {
         dataSource.setDriverClassName(driver);
         dataSource.setUrl(url);

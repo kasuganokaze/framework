@@ -1,4 +1,4 @@
-package org.kaze.framework.ioc.stereotype;
+package org.kaze.framework.bean.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,13 +6,15 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * DAO层注解
+ * 类参数注解
  *
  * @author kaze
- * @since 2017/09/03
+ * @since 2017/09/02
  */
-@Target(ElementType.TYPE)
+@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Repository {
+public @interface Value {
+
+    String value();
 
 }

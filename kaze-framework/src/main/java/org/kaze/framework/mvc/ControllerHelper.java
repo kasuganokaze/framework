@@ -1,8 +1,8 @@
 package org.kaze.framework.mvc;
 
 import org.apache.commons.lang3.ArrayUtils;
-import org.kaze.framework.ioc.BeanHelper;
-import org.kaze.framework.ioc.stereotype.Controller;
+import org.kaze.framework.bean.BeanHelper;
+import org.kaze.framework.bean.stereotype.Controller;
 import org.kaze.framework.mvc.annotation.RequestMapping;
 import org.kaze.framework.mvc.bean.Handler;
 import org.kaze.framework.mvc.bean.RequestMethod;

@@ -1,10 +1,10 @@
-package org.kaze.framework.ioc;
+package org.kaze.framework.bean;
 
 import org.kaze.framework.core.support.ClassScanner;
-import org.kaze.framework.ioc.stereotype.Component;
-import org.kaze.framework.ioc.stereotype.Controller;
-import org.kaze.framework.ioc.stereotype.Repository;
-import org.kaze.framework.ioc.stereotype.Service;
+import org.kaze.framework.bean.stereotype.Component;
+import org.kaze.framework.bean.stereotype.Controller;
+import org.kaze.framework.bean.stereotype.Repository;
+import org.kaze.framework.bean.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;

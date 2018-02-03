@@ -73,32 +73,6 @@ public final class ConvertUtil {
     }
 
     /**
-     * 转为double型
-     */
-    public static double toDouble(Object obj) {
-        return toDouble(obj, 0);
-    }
-
-    /**
-     * 转为double型(提供默认值)
-     */
-    public static double toDouble(Object obj, double defaultValue) {
-        double doubleValue = defaultValue;
-        if (obj != null) {
-            String strValue = toString(obj);
-            if (StringUtil.isNotEmpty(strValue)) {
-                try {
-                    doubleValue = Double.parseDouble(strValue);
-                } catch (NumberFormatException e) {
-                    doubleValue = defaultValue;
-                }
-
-            }
-        }
-        return doubleValue;
-    }
-
-    /**
      * 转为boolean型
      */
     public static boolean toBoolean(Object obj) {

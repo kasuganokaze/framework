@@ -3,7 +3,7 @@ package org.kaze.framework.mvc.support;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.collections4.MapUtils;
 import org.kaze.framework.core.util.ConfigUtil;
-import org.kaze.framework.ioc.BeanHelper;
+import org.kaze.framework.bean.BeanHelper;
 import org.kaze.framework.mvc.annotation.ResponseBody;
 import org.kaze.framework.mvc.bean.Handler;
 import org.kaze.framework.mvc.bean.ModelAndView;

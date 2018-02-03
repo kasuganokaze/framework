@@ -8,8 +8,8 @@ import org.kaze.framework.aop.proxy.AspectProxy;
 import org.kaze.framework.aop.proxy.Proxy;
 import org.kaze.framework.aop.proxy.ProxyChain;
 import org.kaze.framework.core.support.ClassScanner;
-import org.kaze.framework.ioc.BeanHelper;
-import org.kaze.framework.ioc.stereotype.Service;
+import org.kaze.framework.bean.BeanHelper;
+import org.kaze.framework.bean.stereotype.Service;
 import org.kaze.framework.tx.proxy.TransactionProxy;
 
 import java.lang.reflect.Method;

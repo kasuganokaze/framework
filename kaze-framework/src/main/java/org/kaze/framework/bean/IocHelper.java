@@ -1,9 +1,9 @@
-package org.kaze.framework.ioc;
+package org.kaze.framework.bean;
 
 import org.kaze.framework.core.util.ClassUtil;
 import org.kaze.framework.core.util.ConfigUtil;
-import org.kaze.framework.ioc.annotation.Autowired;
-import org.kaze.framework.ioc.annotation.Value;
+import org.kaze.framework.bean.annotation.Autowired;
+import org.kaze.framework.bean.annotation.Value;
 
 import java.lang.reflect.Field;
 import java.util.Map;

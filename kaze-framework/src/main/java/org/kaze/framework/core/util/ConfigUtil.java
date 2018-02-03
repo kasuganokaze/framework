@@ -15,18 +15,17 @@ import java.util.Properties;
  */
 public final class ConfigUtil {
 
-    private static Properties configProps;
+    private static Properties properties = new Properties();
 
     static {
         String fileName = "kaze.properties";
         InputStream is = null;
         try {
-            is = Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName);
+            is = ClassUtil.getClassLoader().getResourceAsStream(fileName);
             if (is == null) {
                 throw new FileNotFoundException(fileName + " is not found");
             }
-            configProps = new Properties();
-            configProps.load(is);
+            properties.load(is);
         } catch (IOException e) {
             throw new RuntimeException("load properties file failure", e);
         } finally {
@@ -76,11 +75,10 @@ public final class ConfigUtil {
      * 获取字符型属性(可指定默认值)
      */
     public static String getString(String key, String defaultValue) {
-        String value = defaultValue;
-        if (configProps.containsKey(key)) {
-            value = configProps.getProperty(key);
+        if (properties.containsKey(key)) {
+            return properties.getProperty(key);
         }
-        return value;
+        return defaultValue;
     }
 
     /**
@@ -94,11 +92,10 @@ public final class ConfigUtil {
      * 获取数值型属性(可指定默认值)
      */
     public static int getInt(String key, int defaultValue) {
-        int value = defaultValue;
-        if (configProps.containsKey(key)) {
-            value = ConvertUtil.toInt(configProps.getProperty(key));
+        if (properties.containsKey(key)) {
+            return ConvertUtil.toInt(properties.getProperty(key));
         }
-        return value;
+        return defaultValue;
     }
 
     /**
@@ -112,11 +109,10 @@ public final class ConfigUtil {
      * 获取布尔型属性(可指定默认值)
      */
     public static boolean getBoolean(String key, boolean defaultValue) {
-        boolean value = defaultValue;
-        if (configProps.containsKey(key)) {
-            value = ConvertUtil.toBoolean(configProps.getProperty(key));
+        if (properties.containsKey(key)) {
+            return ConvertUtil.toBoolean(properties.getProperty(key));
         }
-        return value;
+        return defaultValue;
     }
 
 }

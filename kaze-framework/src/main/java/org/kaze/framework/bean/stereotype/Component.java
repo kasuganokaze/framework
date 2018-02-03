@@ -1,4 +1,4 @@
-package org.kaze.framework.ioc.annotation;
+package org.kaze.framework.bean.stereotype;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,13 +6,13 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 依赖注入注解
+ * Bean注解
  *
  * @author kaze
- * @since 2017/08/30
+ * @since 2017/09/03
  */
-@Target(ElementType.FIELD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Autowired {
+public @interface Component {
 
 }

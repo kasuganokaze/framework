@@ -9,13 +9,6 @@ package org.kaze.framework.core.util;
 public final class ClassUtil {
 
     /**
-     * 获取类加载器
-     */
-    public static ClassLoader getClassLoader() {
-        return Thread.currentThread().getContextClassLoader();
-    }
-
-    /**
      * 加载类（将自动初始化）
      */
     public static Class<?> loadClass(String className) {
@@ -33,6 +26,13 @@ public final class ClassUtil {
             throw new RuntimeException("load class failure", e);
         }
         return cls;
+    }
+
+    /**
+     * 获取类加载器
+     */
+    public static ClassLoader getClassLoader() {
+        return Thread.currentThread().getContextClassLoader();
     }
 
     /**

@@ -19,12 +19,12 @@ public class ContextLoaderListener extends ContextLoader implements ServletConte
 
     @Override
     public void contextInitialized(ServletContextEvent event) {
-        this.initWebApplicationContext(event.getServletContext());
+        initWebApplicationContext(event.getServletContext());
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent event) {
-        //关闭数据库驱动
+        //close database drivers
         Enumeration<Driver> drivers = DriverManager.getDrivers();
         Driver driver;
         while (drivers.hasMoreElements()) {
